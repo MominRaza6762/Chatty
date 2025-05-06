@@ -1,0 +1,46 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.auth-squares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 2rem;
+    width: 150px;
+    justify-content: center;
+    /* Adjust grid size as needed */
+}
+
+.skeleton{
+    width: 70px;
+    height: 70px;
+}
+
+.auth-square {
+    /* Ensures a square shape */
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-square .ant-skeleton-button {
+    background-color: #23283C !important; 
+    border-color: #23283C !important; 
+    border-radius: 10px !important;
+    
+  }
+
+.auth-text h2 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.auth-text p {
+    font-size: 1rem;
+}

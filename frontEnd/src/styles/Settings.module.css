@@ -1,0 +1,98 @@
+/* Settings.module.css */
+
+/* General container for the settings page */
+.settingcontainer {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+/* Title and description container */
+.settingtitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.settingtitle h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.settingtitle p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Container for all theme boxes */
+.themeContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+    justify-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Individual theme box */
+.themeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.themeBox:hover {
+    transform: translateY(-5px);
+}
+
+/* Row to display colors horizontally */
+.colorRow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Individual color circle for each color */
+.colorCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Block showing the theme color and name */
+.colorBlock {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Theme name below the color block */
+.themeName {
+    color: #fff;
+}
+
+@media screen and (max-width : 300px) {
+   .themeBox{
+    width: 90%;
+    margin: 0 auto;
+   }
+   .colorCircle {
+    width: 15px;
+    height: 15px;
+}
+}

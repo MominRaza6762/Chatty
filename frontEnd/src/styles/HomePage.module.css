@@ -1,0 +1,15 @@
+.homecontainer{
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.homecontents  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+}

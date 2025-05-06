@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nochatcontainer {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Container for sender's messages (align to the right) */
+.senderContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 10px;
+}
+
+/* Container for receiver's messages (align to the left) */
+.receiverContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 10px;
+}
+
+/* Message bubble for sender */
+.sender {
+    /* Green for sender */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Message bubble for receiver */
+.receiver {
+    /* Light gray for receiver */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared styles for text inside messages */
+.messageText {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Shared styles for images inside messages */
+.messageImage {
+    margin-top: 5px;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+/* Timestamp styling */
+.messageTime {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+    text-align: right;
+    display: block;
+}
+
+/* no chat container responsiveness */
+
+@media screen and (max-width : 700px) {
+    .nochattitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .nochatdesc {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* chat container responsiveness */
+
+@media screen and (max-width : 500px) {
+    .header{
+        width: 85%;
+    }
+    .sender,
+    .receiver{
+    padding: 6px 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    }
+    .messageText{
+        font-size: 12px;
+    }
+    .messageImage {
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+    }
+    .messageTime{
+        font-size: 8px;
+    }
+}
